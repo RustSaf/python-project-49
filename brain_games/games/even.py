@@ -8,8 +8,8 @@ def main():
     print(f'Question: {num}')
     answers = ['yes', 'no']
     i = num % 2
-    result = answers[i]
-    return result
+    even = answers[i]
+    return even
 
 
 if __name__ == '__main__':

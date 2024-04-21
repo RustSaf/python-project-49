@@ -9,14 +9,14 @@ def main():
     match i:
         case 0:
             print(f'Question: {num1} + {num2}')
-            result = str(num1 + num2)
+            calc = str(num1 + num2)
         case 1:
             print(f'Question: {num1} - {num2}')
-            result = str(num1 - num2)
+            calc = str(num1 - num2)
         case _:
             print(f'Question: {num1} * {num2}')
-            result = str(num1 * num2)
-    return result
+            calc = str(num1 * num2)
+    return calc
 
 
 if __name__ == '__main__':

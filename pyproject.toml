@@ -1,15 +1,24 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Rust <afarg1710@gmail.com>"]
+description = "Logical games united under a common name 'Brain games'"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.10"
+]
+authors = ["Rust <afarg1710@gmail.com>",]
+repository = "https://github.com/RustSaf/python-project-49"
 readme = "README.md"
 packages = [{ include = "brain_games" }, { include = "brain_games/games" },]
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-game = "brain_games.scripts.brain_game:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
