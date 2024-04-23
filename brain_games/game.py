@@ -12,8 +12,9 @@ def main():
     print('This module is engine of the games.')
 
 
-def engine_games(game):
+def engine_games(introduct, game):
     name = welcome_user()
+    print(introduct)
     for _ in range(3):
         match game:
             case 'even':

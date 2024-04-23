@@ -4,8 +4,8 @@ from brain_games.game import engine_games
 
 
 def main():
-    print('What number is missing in the progression?')
-    engine_games('progression')
+    text_progress = 'What number is missing in the progression?'
+    engine_games(text_progress, 'progression')
 
 
 if __name__ == '__main__':

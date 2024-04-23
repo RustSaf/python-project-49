@@ -10,7 +10,7 @@ def main():
     random_index = random.randint(0, 9)
     lost_element = progression[random_index]
     progression[random_index] = '..'
-    print('Question: ' + ', '.join(progression))
+    print('Question: ' + ' '.join(progression))
     return lost_element
 
 
