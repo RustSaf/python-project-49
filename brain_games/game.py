@@ -4,6 +4,7 @@ import brain_games.games.calc
 import brain_games.games.gcd
 import brain_games.games.progression
 import brain_games.games.prime
+from brain_games.cli import welcome_user
 
 
 def main():
@@ -11,7 +12,8 @@ def main():
     print('This module is engine of the games.')
 
 
-def engine_games(name, game):
+def engine_games(game):
+    name = welcome_user()
     for _ in range(3):
         match game:
             case 'even':
@@ -35,6 +37,7 @@ def engine_games(name, game):
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
+    return
 
 
 if __name__ == '__main__':

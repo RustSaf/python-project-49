@@ -4,7 +4,8 @@ import random
 
 
 def main():
-    num1, num2 = (random.randint(0, 100) for _ in range(2))
+    num1 = random.randint(0, 100)
+    num2 = random.randint(0, 100)
     print(f'Question: {num1} {num2}')
     if num1 == 0 and num2 == 0:
         return 0

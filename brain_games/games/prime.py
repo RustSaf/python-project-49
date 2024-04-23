@@ -4,7 +4,7 @@ import random
 
 
 def main():
-    num = random.randint(0, 100)
+    num = random.randint(3, 100)
     print(f'Question: {num}')
     answers = ['no', 'yes']
     for i in range(2, num):
