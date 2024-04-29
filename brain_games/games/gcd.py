@@ -3,7 +3,14 @@
 import random
 
 
-def main():
+TEXT_GCD = 'Find the greatest common divisor of given numbers.'
+
+
+def intro():
+    print(TEXT_GCD)
+
+
+def greate_com_dev():
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     print(f'Question: {num1} {num2}')
@@ -17,7 +24,3 @@ def main():
         remind = a % b
         gcd = str(b)
     return gcd
-
-
-if __name__ == '__main__':
-    print(main())

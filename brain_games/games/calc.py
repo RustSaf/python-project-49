@@ -3,7 +3,14 @@
 import random
 
 
-def main():
+TEXT_CALC = 'What is the result of the expression?'
+
+
+def intro():
+    print(TEXT_CALC)
+
+
+def calculate():
     num1, num2 = (random.randint(0, 100) for _ in range(2))
     i = random.randint(0, 2)
     match i:
@@ -17,7 +24,3 @@ def main():
             print(f'Question: {num1} * {num2}')
             calc = str(num1 * num2)
     return calc
-
-
-if __name__ == '__main__':
-    print(main())

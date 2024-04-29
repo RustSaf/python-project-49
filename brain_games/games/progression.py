@@ -3,7 +3,14 @@
 import random
 
 
-def main():
+TEXT_PROGRESSION = 'What number is missing in the progression?'
+
+
+def intro():
+    print(TEXT_PROGRESSION)
+
+
+def progress():
     num = random.randint(0, 100)
     step = random.randint(0, 10)
     progression = [str(num + step * i) for i in range(10)]
@@ -12,7 +19,3 @@ def main():
     progression[random_index] = '..'
     print('Question: ' + ' '.join(progression))
     return lost_element
-
-
-if __name__ == '__main__':
-    print(main())

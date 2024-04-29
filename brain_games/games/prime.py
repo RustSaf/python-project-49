@@ -3,7 +3,14 @@
 import random
 
 
-def main():
+TEXT_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def intro():
+    print(TEXT_PRIME)
+
+
+def prime_num():
     num = random.randint(3, 100)
     print(f'Question: {num}')
     answers = ['no', 'yes']
@@ -15,7 +22,3 @@ def main():
         else:
             prime = answers[1]
     return prime
-
-
-if __name__ == '__main__':
-    print(main())
