@@ -6,14 +6,14 @@ import random
 TEXT_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def intro():
-    print(TEXT_EVEN)
+def is_even(number):
+    remain = number % 2
+    return remain
 
 
 def parity():
     num = random.randint(0, 100)
     print(f'Question: {num}')
     answers = ['yes', 'no']
-    i = num % 2
-    even = answers[i]
+    even = answers[is_even(num)]
     return even
