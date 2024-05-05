@@ -3,20 +3,22 @@
 import random
 
 
-TEXT_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_remain(number):
+def is_remainder(number):
     for i in range(2, number):
-        remain = number % i
-        if remain == 0:
-            return 1
-    return 0
+        remain = True if number % i > 0 else False
+        if remain is False:
+            return remain
+        else:
+            continue
+    return remain
 
 
-def prime_num():
+def game():
     num = random.randint(3, 100)
-    print(f'Question: {num}')
-    answers = ['yes', 'no']
-    prime = answers[is_remain(num)]
-    return prime
+    question = str(num)
+    answers = ['no', 'yes']
+    prime = answers[is_remainder(num)]
+    return question, prime

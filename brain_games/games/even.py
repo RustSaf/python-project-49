@@ -3,17 +3,16 @@
 import random
 
 
-TEXT_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(number):
-    remain = number % 2
-    return remain
+def is_remainder(number):
+    return True if number % 2 == 1 else False
 
 
-def parity():
+def game():
     num = random.randint(0, 100)
-    print(f'Question: {num}')
+    question = str(num)
     answers = ['yes', 'no']
-    even = answers[is_even(num)]
-    return even
+    even = answers[is_remainder(num)]
+    return question, even

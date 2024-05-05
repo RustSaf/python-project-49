@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # script: prime
 from brain_games.game import engine_games
-from brain_games.games.prime import TEXT_PRIME
-from brain_games.games.prime import prime_num
+import brain_games.games.prime
 
 
 def main():
-    engine_games(TEXT_PRIME, prime_num)
+    engine_games(brain_games.games.prime)
     return
 
 

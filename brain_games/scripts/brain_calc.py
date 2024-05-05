@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # script: calc
 from brain_games.game import engine_games
-from brain_games.games.calc import TEXT_CALC
-from brain_games.games.calc import calculate
+import brain_games.games.calc
 
 
 def main():
-    engine_games(TEXT_CALC, calculate)
+    engine_games(brain_games.games.calc)
     return
 
 

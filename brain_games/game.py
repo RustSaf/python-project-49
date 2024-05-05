@@ -3,11 +3,15 @@
 from brain_games.cli import welcome_user
 
 
-def engine_games(INTRO, game):
+MAX_COUNT = 3
+
+
+def engine_games(games):
     name = welcome_user()
-    print(INTRO)
-    for _ in range(3):
-        result = game()
+    print(games.INTRO)
+    for _ in range(MAX_COUNT):
+        question, result = games.game()
+        print('Question: ' + question)
         answer = input('Your answer: ')
         if answer == result:
             print('Correct!')
