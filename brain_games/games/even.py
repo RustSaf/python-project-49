@@ -6,13 +6,12 @@ import random
 INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_remainder(number):
-    return True if number % 2 == 1 else False
+def is_even(number):
+    return True if number % 2 == 0 else False
 
 
-def game():
+def get_question_and_right_answer():
     num = random.randint(0, 100)
     question = str(num)
-    answers = ['yes', 'no']
-    even = answers[is_remainder(num)]
-    return question, even
+    right_answer = 'yes' if is_even(num) else 'no'
+    return question, right_answer

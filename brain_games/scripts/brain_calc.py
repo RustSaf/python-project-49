@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # script: calc
 from brain_games.game import engine_games
-import brain_games.games.calc
+from brain_games.games import calc
 
 
 def main():
-    engine_games(brain_games.games.calc)
+    engine_games(calc)
     return
 
 

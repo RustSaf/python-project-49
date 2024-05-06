@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # script: progression
 from brain_games.game import engine_games
-import brain_games.games.progression
+from brain_games.games import progression
 
 
 def main():
-    engine_games(brain_games.games.progression)
+    engine_games(progression)
     return
 
 

@@ -6,11 +6,11 @@ from brain_games.cli import welcome_user
 MAX_COUNT = 3
 
 
-def engine_games(games):
+def engine_games(game):
     name = welcome_user()
-    print(games.INTRO)
+    print(game.INTRO)
     for _ in range(MAX_COUNT):
-        question, result = games.game()
+        question, result = game.get_question_and_right_answer()
         print('Question: ' + question)
         answer = input('Your answer: ')
         if answer == result:

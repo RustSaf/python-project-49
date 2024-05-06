@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # script: even
 from brain_games.game import engine_games
-import brain_games.games.even
+from brain_games.games import even
 
 
 def main():
-    engine_games(brain_games.games.even)
+    engine_games(even)
     return
 
 
